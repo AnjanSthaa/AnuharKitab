@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Facebook - login or sign up
+    </title>
+</head>
+<style>
+body{
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    width:100%;
+    height:100vh;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left , .right , div.loginbox{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.left{
+    width:500px;
+    align-items: flex-start;
+}
+
+
+.left img {      
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: none;
+  margin: none;
+}
+.left #para1{
+margin-top: none;
+padding-left: 83px;
+text-align: center;
+font-size: 24px;
+font-family: 'Roboto', sans-serif;
+width:auto;
+}
+
+.right{
+    width: 400px;
+}
+
+#para2{
+    margin-top: 16px;
+    margin-bottom: 17px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;   
+    font-size: 14px;
+    color:#0866ff;
+    font-weight: 500;
+}
+
+#para3{
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;   
+    text-align: center;
+    font-size: 14px;
+    color: #1c1e21;
+}
+form{
+    margin-right: 40px;
+    background-color: white;
+    width: 385px;
+    height: 350px;
+    margin-left: 60px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 0 rgba(89, 87, 87, 0.2), 0 6px 30px 0 rgba(92, 89, 89, 0.19);
+    box-sizing: border-box;
+}
+input[type=text] {
+    
+    width: 355px;
+    height: 55px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    box-sizing: border-box;
+    font-size: 17px;
+    padding: 14px 16px;
+    outline: none;
+    }
+
+input[type=text]:focus {
+    border: 1px solid #70a8ff;
+    box-shadow: 0.2px 0.2px 2px #70a8ff;
+}
+
+input[type=password] { 
+    width: 355px;
+    height: 55px;
+    margin-left: 15px;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    box-sizing: border-box;
+    font-size: 17px;
+    padding: 14px 16px;
+    outline: none;
+    }
+    placeholder{
+        color: #389a24;
+    }
+    input[type=password]:focus{
+        border: 1px solid #70a8ff;
+        box-shadow:0.2px 0.2px 2px #70a8ff;
+    }
+
+a.login{
+    border: none;
+    width: 355px;
+    height: 48px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 6px;
+    background-color: #0866ff;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    }
+a.login:hover{
+    background-color: #1c72fd;
+    cursor: pointer;
+}
+a.login:active{
+    background-color: #1c72fd;
+    cursor: pointer;
+}
+a.cna{
+    border: none;
+    width: 200px;
+    height: 48px;
+    margin-left: 90px;
+    margin-top: 15px;
+    border-radius: 6px;
+    background-color: #42b72a;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    }
+a.cna:hover{
+    background-color: #3ba626;
+    cursor: pointer;
+}
+a.cna:active{
+    background-color: #389a24;
+    cursor: pointer;
+}
+a.create{
+    text-decoration: none;
+    color: #1c1e21;
+}
+
+a.create:hover{
+    text-decoration: underline;
+    color: #1c1e21;
+}
+a.fp{
+    text-decoration: none;
+    color: #0866ff;
+}
+
+a.fp:hover{
+    text-decoration: underline;
+    color: #0866ff;
+}
+
+@media(max-width:950px) {
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        margin-top: 50px;
+        width: 500px;
+        align-items: center;
+        align-content: center;
+        
+    }
+
+    .left #para1{
+        height:75px;
+        padding-left: none;
+        margin-right: 55px;
+        margin-bottom: none;
+    }
+    form{
+        margin-top:1px;
+        margin-bottom: 200px;
+    }
+
+ 
+}
+
+</style>
+<body>
+    <div class="container">
+<div class="left">
+<img src="Facebook-New-Logo.png" width="275">
+<p id = "para1">
+    Facebook helps you connect and share with the people in your life.
+</p>
+</div>
+<div class = "right">
+<form class="mt-1 mb-[200px]">
+    <input  type = "text" name = "Email adress or phone number" placeholder="Email adress or phone number">
+    <input  type = "password" name = "Password" placeholder="Password">
+    <a href="#" class="login">Log in</a>
+    <p id = "para2">
+        <a href="#" class="fp">Forgotten password?</a>
+    </p>
+<hr width = "355" size="1px" color="#dadde1"></hr>
+<a href="#" class="cna">Create new account</a>
+<p id="para3">
+        <a href="#" class="create"><b>Create a page</b></a> for celebrity,brand or business.
+</p>
+</form>
+</div>
+</div>
+</body>
+</html>
